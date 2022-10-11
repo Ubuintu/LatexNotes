@@ -3,6 +3,7 @@
 \documentclass{article}
 
 % Preamble; here we set up the values for the \maketitle command
+% ** NEVER USE '&' INSTEAD OF 'and' **
 \title{Linux Notes}
 \date{10-10-2022}
 \author{Tommy Bui}
@@ -13,5 +14,48 @@
 	\pagenumbering{arabic}
 	
 	\section{High-level View of Unix Environment}
+	\begin{itemize}
+		\item To best understand how an operating system works, keep in mind the concept of abstraction.
+		\begin{itemize}
+			\item Abstraction focuses on the basic purpose and operation of an object.
+		\end{itemize}
+		% Example of bolded text
+		\item There are many times for an abstracted subdivision in software. In these notes, the term {\bf component} 
+		\item This chapter provides a high-level overview of the components that make up a Linux system.
+	\end{itemize}
+
+	\subsection{Levels and Layers of Abstraction in Linux}
+	\begin{itemize}
+		
+		\item Abstraction helps break down the Linux operating system into easy-to-understand components.
+		
+		\item We arrange components into layers or levels, classifications or groupings of components according to where the components lay between the user and hardware.
+		
+		\begin{itemize}
+			\item i.e. Web browsers, games, etc. are at the top layer; the bottom layer consists of the memory in hardware which is composed of 0's and 1's.
+		\end{itemize}
+	
+		\item A Linux OS consists of 3 main levels:
+		
+		\begin{itemize}
+			
+			\item The base consists of hardware:
+				\begin{itemize}
+					\item Hardware includes the memory as well as the Central Processing Unit(s) to perform computation or RD/WR to memory.
+					\item Devices such as disks and network interfaces are also part of the hardware.
+				\end{itemize}
+			
+			\item The next level up is the kernel:
+				\begin{itemize}
+					\item The kernal is consider the software within memory that tells the CPU where to look for its next task.
+					\item As a mediator, the kernal manages hardware (i.e. main memory) and is the primary interface between hardware and any running program.
+				\end{itemize}
+			
+			\item Processes:
+				\begin{itemize}
+					\item Running programs that are managed by the kernal, make up the system's upper level known as {\bf user space} (i.e. all web servers run as user processes).
+				\end{itemize}
+		\end{itemize}
+	\end{itemize}
 	
 \end{document}
