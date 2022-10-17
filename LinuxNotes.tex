@@ -43,19 +43,45 @@
 				\begin{itemize}
 					\item Hardware includes the memory as well as the Central Processing Unit(s) to perform computation or RD/WR to memory.
 					\item Devices such as disks and network interfaces are also part of the hardware.
+					\item Examples of Hardware: CPU, main memory (RAM), Disks, Network ports, etc.
 				\end{itemize}
 			
 			\item The next level up is the kernel:
 				\begin{itemize}
 					\item The kernal is consider the software within memory that tells the CPU where to look for its next task.
 					\item As a mediator, the kernal manages hardware (i.e. main memory) and is the primary interface between hardware and any running program.
+					\item Linux Kernal contains: System calls, Process Management, Memory Management, and Device Drivers
 				\end{itemize}
 			
 			\item Processes:
 				\begin{itemize}
-					\item Running programs that are managed by the kernal, make up the system's upper level known as {\bf user space} (i.e. all web servers run as user processes).
+					\item Running programs that are managed by the kernal, make up the system's upper level known as {\bf user space} (i.e. all web servers run as {\bf user processes}).
+					\item User Processes include GUI, Servers and Shell
 				\end{itemize}
+			
+			\item The main difference between how the kernal and the user processes run is that the \underline{kernal runs in kernal mode} and \underline{user processes run in user mode}
+			
+			\item Code running in kernal mode has unrestricted access to the processor and main memory. This can be powerful but is a dangerous privilege that can cause the kernal to easily corrupt and crash the entire system. 
+			
+			\item Memory area that the \underline{only the kernal can access is {\bf kernal space}}
+			
+			\item Unlike kernal mode, user mode is restricted to a subset of memory and safe CPU operations
+			
+			\begin{itemize}
+				\item The Linux kernal can run kernal threads, which are similar to processes but have access to kernal space (i.e. kthreadd and kblockd)
+			\end{itemize}
+			
+			\item \textit{User space} refers to the parts of the main memory that user processes can access. If a process were to crash, the consequences are limited and can be repaired by the kernel
+			
+				\begin{itemize}
+					\item i.e. If your web browser crashes, it won't stop the scientific computation background processes that has been running for days
+					\item In theory, a user process gone haywire can't damage the majority of the system. However, user processes may affect other parts of your system
+					\item i.e. With the correct permissions, a user process can damage data on a disk
+				\end{itemize}
+				
 		\end{itemize}
 	\end{itemize}
+
+	\subsection{Hardware: Understanding Main Memory}
 	
 \end{document}

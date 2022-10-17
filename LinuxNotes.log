@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.9)  10 OCT 2022 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.9)  16 OCT 2022 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -54,25 +54,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-[1] (./LinuxNotes.aux) ) 
+Overfull \hbox (1.75606pt too wide) in paragraph at lines 53--54
+[]\OT1/cmr/m/n/10 Linux Ker-nal con-tains: Sys-tem calls, Pro-cess Man-age-ment
+, Mem-
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 62.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 62.
+
+Overfull \hbox (42.3339pt too wide) in paragraph at lines 62--63
+\OT1/cmr/m/n/10 run is that the $[]$ and $[]$ 
+ []
+
+[1] [2] (./LinuxNotes.aux) ) 
 Here is how much of TeX's memory you used:
- 431 strings out of 480247
- 7804 string characters out of 5896151
- 296475 words of memory out of 5000000
- 18445 multiletter control sequences out of 15000+600000
- 473849 words of font info for 43 fonts, out of 8000000 for 9000
+ 435 strings out of 480247
+ 7853 string characters out of 5896151
+ 300475 words of memory out of 5000000
+ 18448 multiletter control sequences out of 15000+600000
+ 474195 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,6n,38p,200b,229s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/ubuintu/.texlive2021/texmf-var/fonts/pk/ljfour/
-jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on LinuxNotes.pdf (2 pages, 67160 bytes).
+ 34i,6n,38p,271b,242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/ubuintu/.texlive2021/texmf-var/fonts/pk/ljf
+our/jknappen/ec/tcrm1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on LinuxNotes.pdf (3 pages, 82975 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
