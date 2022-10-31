@@ -84,4 +84,26 @@
 
 	\subsection{Hardware: Understanding Main Memory}
 	
+	\begin{itemize}
+
+		\item In it's rawest form, main memory is a giant storage of bits.
+		\item All input \& output from peripheral devices flows through main memory is also in form of bits.
+		\item The CPU operates on memory; it reads instructions \& data from the memory and writes data back to the memory.
+		\item The term state in reference to memory, processoes, the kernal, etc. refers to the particular arrangement of bits.
+
+	\end{itemize}
+
+	\subsection{The Kernel}
+
+	Nearly everything the kernel does revolves around the main memory. One of the kernel's task is to partition memory into subdivisions and it must maintain certain state information about those subdivisions at all times. Each process gets its own share of memory \& the kernel manages each process' memory. \\
+
+	The kernal is in charge of managing tasks in four general system areas:
+	\begin{itemize}
+		\item {\bf Processes:} The kernel is responsible for determining which proccess can use the CPU.
+		\item {\bf Memory:} The kernel needs to keep track of all memory; Memory can be shared between processes even if allocated to a particular process.
+		\item {\bf Device drivers:} The kernel acts as an interface between hardware \& processes. The kernel usually operates the hardware.
+		\item {\bf System calls \& support:} Processes normally use system calls to communicate with the kernel.
+	\end{itemize}
+	
+	
 \end{document}
