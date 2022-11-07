@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  30 OCT 2022 21:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  6 NOV 2022 18:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,7 +73,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-[2] [3] (./LinuxNotes.aux) ) 
+[2]
+Overfull \hbox (11.1673pt too wide) in paragraph at lines 111--112
+[]\OT1/cmr/m/n/10 Explaining the con-cepts be-hind start-ing & ter-mi-nat-ing p
+ro-cesses are straight-
+ []
+
+[3] [4] (./LinuxNotes.aux) ) 
 Here is how much of TeX's memory you used:
  435 strings out of 480247
  7853 string characters out of 5896150
@@ -89,10 +95,10 @@ ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on LinuxNotes.pdf (4 pages, 87694 bytes).
+Output written on LinuxNotes.pdf (5 pages, 92784 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 56 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

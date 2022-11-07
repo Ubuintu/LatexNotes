@@ -105,5 +105,24 @@
 		\item {\bf System calls \& support:} Processes normally use system calls to communicate with the kernel.
 	\end{itemize}
 	
-	
+	\subsubsection{Process Management}
+	\begin{itemize}
+		\item Process management describes the starting, pausing, resuming, scheduling, \& terminating of processes.
+		\item Explaining the concepts behind starting \& terminating processes are straightfoward, but describing how a process uses the CPU in its operation is more complex.
+		\item i.e. On any OS, may processes run simultaneoulsy on a desktop computer at the same time. However, things are not as they appear: the processes behind these applications typically do not run at the exact same time.
+		\item Consider a system with a one-core CPU. Many processes may be able to use the CPU, {\bf but only one process an actually use the CPU at any given time}.
+		\item In practice, each process uses the CPU for a fraction of a second, pauses, then another process uses the CPU for a fraction of time and so on.
+		\item The act of one process giving up control of the CPU to another process is called a {\bf context switch}. Each piece of time (called a time slice) gives a process enough time for significant computation (a process often finishes its current task during a single slice).
+		\item Since the slices are so small, people cannot perceive them and the system seems to be running multiple processes at the same time.	
+		\item The kernal is responsible for context switching. Consider a process that is running in user mode but its time slice is up:
+			\begin{enumerate}
+				\item The CPU (Hardware) interrupts the current process based on an internal timer, and returns control back to the kernel by switching into kernel mode.
+				\item The kernel records the current state of the CPU \& memory, which will be essential to resuming the process that was just interrupted.
+				\item The kernal performs any tasks that might have come up during the preceding time slice (such as collecting data from IO operations.
+				\item The kernal is now ready to let another process run. The kernel analyzes the list of processes that are ready to run and chooses one.
+				\item The kernel prepares the memory for this new process and then prepares the CPU.
+				\item The kernel tells the CPU how long the time slice for the new process will be.
+				\item The kernel switches the CPU into user mode and hands control of the CPU to the process.
+			\end{enumerate}
+	\end{itemize}	
 \end{document}
