@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \title{Investing notes}
 \date{10-19-2022}
 \author{Tommy Bui}
@@ -37,50 +38,60 @@
 				\item Low risk traders often avoid investing in high-beta stocks.
 				\item Beta relies on past information and so doesn't help describe the fundamentals of the security, however a beta may be a strong factor in quantifying risk for frequent traders
 			\end{itemize}
-		\item {\bf Price-to-Earnings (P/E) Ratio:} The price-to-earnings (P/E) ratio relates a company's share price to its earnings per share.
-			\begin{itemize}
-				\item The ratio represents the factor which traders are willing to buy the security compard to the profit gained by the company with the sale of the security.
-				\item A high (P/E) ratio could mean that a company's stock is overvalued OR that investors are expecting high growth rates in the future.
-				\item According to investopedia, a P/E ratio holds the most value to an analyst when compared against similar companies in the same industry or for a single company across a period of time.
-				\item In essence, {\bf the P/E ratio indicates the dollar amount an investor can expect to invest in a company in order to receive \$1 of that company's earnings.}
-				\item This is why P/E is sometimes referred to as the price multiple since it shows how much investors are willing to pay in dollar amounts per dollar of earnings of that security; If a company was trading at a P/E multiple of 20x, the interpretation is that an investor is willing to pay \$20 for \$1 of that security's current earnings.
-				\item {\bf NOTE:} Valuation ratios compare the company's market value with some financial aspect of its performance - earnings, sales, book value, cash flow, and so forth; the ratio-based approach is the most commonly used method for valuing stocks since ratios are easy to calculate and readily available. The downside of making sense of valuatio ratios is that they require a quite a bit of context (i.e. A P/E ratio of 15 does not mean much unless you know the P/E of the market as a whole, the P/E's of the company's main competitors, the company's historical P/E's, and similar information.
-				\item These two types of EPS metrics factor into the most common P/E ratios: the {\bf forward P/E} and the {\bf trailing P/E}.
-				\item The forward (or leading) P/E uses future earnings guidance rather than trailing figures. Sometimes called "Estimated price to earnings", this
-					forward indicated is useful for comparing current earnings to future earnings and helps provided a clear picture of what earnings will look like.
-				\item The main issue with forward P/E metric is that companies could underestimate earnings in order to beat the estimate P/E or may overstate the estimate and later adjust it going into their next earnings annooucement.
-				\item Trailing Price-to-Earnings relies on past performance by dividng the current share price bye the total EPS earnings over the past 12 months; it's the most popular P/E metric because its the most objective (assuming companies reported their earnings accurately)
-				\item The trailing P/E has its share of shortcomings as well, namely, that a company's past performance doesn't reflect future behavior; thus investors should commit money based on future earnings power, not the past.
-				\item If an EPS remains constant, while the stock pricecs fluctuate, is a problem. If a major company event drives the stock prices higher or lower, the trailing P/E will be less reflective of those changes.
-				\item If the forward P/E is lower than the trailing P/E, it means analyst expect earnings to increase; if the foward P/E is higher than the current P/E, analysts expect them to decrease
-				\begin{align*}
-					Price-to-Earnings (P/E) ratio &= \frac{Market Value Per Share}{Earnings Per Share}\\
-				\end{align*}
-				\item Consider this example where we compare two financial company's P/E ratio to determine which is over/undervalued:
-					\begin{itemize}
-						\item Bank of America Corporation \$BAC closed out the 2020 year with the following:
-							\begin{itemize}
-								\item {\bf Stock Price} = \$30.31
-								\item {\bf Diluted EPS} = \$1.87
-								\item ${\bf P/E} = 16.21 = (\$30.31/\$1.87)$
-							\end{itemize}
-						\item In short, \$BAC was traded at roughly 16 times its trailing earnings. However, the 16.21 P/E multiple by itself is not helpful unless you have something to compare it to. Lets compare \$BAC with JPMorgan Chase \& Co. (\$JPM) of 2020:
-							\begin{itemize}
-								\item {\bf Stock Price} = \$127.07
-								\item {\bf Diluted EPS} = \$8.88
-								\item {\bf P/E} = 14.31x
-							\end{itemize}
-						\item When you compare \$BAC's P/E of 16x to \$JPM's P/E of roughly 14x, \$BAC's stock does not appear as overvalued as it did compared with the average P/E of 15 for the S\&P 500. \$BAC's higher P/E ratio might mean investors expected higher earnings growth in the future compared to \$JPM and the overall market.
-						\item However, no single ratio can tell you all you need to know about a stock. \underline{Before investing, it is wise to use a variety of financial ratios to determine whether a stock 
-							is fairly valued and whether a company's financial health justifies its stock valuation}.
-						\item In general, a high P/E suggests either investors are expecting higher earnings growth in the future compared to companies with a lower P/E {\bf OR} the security is overvalued.
-						\item A low P/E can indicate either that a company may currently be undervalued or that the company is doing exceptionally well relative to its past trends.
-						\item When a company has no earnings ot is posting losses, {\bf the P/E will be expressed as N/A}. 
-						\item The P/E ratio can be seen as a means of standardizing the value of a \$1 of earnings throughout the stock market. In theory, by taking the median of P/E ratios over a period of several years, one could formulate something of a standardized P/E ratio, which could then be seen as a benchmark and used to indicated whether or not a stock is worth buying. 
-						\item The inverse of P/E ratio is the earnings yield (E/P ratio) which is defined as EPS per \$ value of the stocks price expressed as a percentage; but this metric is not widely used compared to P/E ratio.
-						\item {\bf Limitations of Using the P/E Ratio:}
-					\end{itemize}
-			\end{itemize}
+		\item {\bf \hyperref[sec:PER]{Price-to-Earnings (P/E) Ratio}:} The price-to-earnings (P/E) ratio relates a company's share price to its earnings per share.
+		\item {\bf Earnings Per Share (EPS):} Calculated as a company's profit divided by the outstanding shares of its common stock. The resulting number is an measure of the company's profitability. A higher EPS indicates greater value since investors will pay more for a company's shares if they believe the company has higher profits relative to its share price.
+		\item {\bf Earnings Date:} This is the date when a company will annouce its financial position, companies in the public sector typically do this every quarter. Traders often take into account the next earnings date as the share price often fluctuates around this time period; If a company has been profitable leading up to the annoucment, its share price will usually increase up to \& slightly after the info is released. 
 	\end{itemize}
+	
+	\subsection{P/E Ratio}
+	\label{sec:PER}
+		\begin{itemize}
+			\item The ratio represents the factor which traders are willing to buy the security compard to the profit gained by the company with the sale of the security.
+			\item A high (P/E) ratio could mean that a company's stock is overvalued OR that investors are expecting high growth rates in the future.
+			\item According to investopedia, a P/E ratio holds the most value to an analyst when compared against similar companies in the same industry or for a single company across a period of time.
+			\item In essence, {\bf the P/E ratio indicates the dollar amount an investor can expect to invest in a company in order to receive \$1 of that company's earnings.}
+			\item This is why P/E is sometimes referred to as the price multiple since it shows how much investors are willing to pay in dollar amounts per dollar of earnings of that security; If a company was trading at a P/E multiple of 20x, the interpretation is that an investor is willing to pay \$20 for \$1 of that security's current earnings.
+			\item {\bf NOTE:} Valuation ratios compare the company's market value with some financial aspect of its performance - earnings, sales, book value, cash flow, and so forth; the ratio-based approach is the most commonly used method for valuing stocks since ratios are easy to calculate and readily available. The downside of making sense of valuatio ratios is that they require a quite a bit of context (i.e. A P/E ratio of 15 does not mean much unless you know the P/E of the market as a whole, the P/E's of the company's main competitors, the company's historical P/E's, and similar information.
+			\item These two types of EPS metrics factor into the most common P/E ratios: the {\bf forward P/E} and the {\bf trailing P/E}.
+			\item The forward (or leading) P/E uses future earnings guidance rather than trailing figures. Sometimes called "Estimated price to earnings", this
+				forward indicated is useful for comparing current earnings to future earnings and helps provided a clear picture of what earnings will look like.
+			\item The main issue with forward P/E metric is that companies could underestimate earnings in order to beat the estimate P/E or may overstate the estimate and later adjust it going into their next earnings annooucement.
+			\item Trailing Price-to-Earnings relies on past performance by dividng the current share price bye the total EPS earnings over the past 12 months; it's the most popular P/E metric because its the most objective (assuming companies reported their earnings accurately)
+			\item The trailing P/E has its share of shortcomings as well, namely, that a company's past performance doesn't reflect future behavior; thus investors should commit money based on future earnings power, not the past.
+			\item If an EPS remains constant, while the stock pricecs fluctuate, is a problem. If a major company event drives the stock prices higher or lower, the trailing P/E will be less reflective of those changes.
+			\item If the forward P/E is lower than the trailing P/E, it means analyst expect earnings to increase; if the foward P/E is higher than the current P/E, analysts expect them to decrease
+			\begin{align*}
+				Price-to-Earnings (P/E) ratio &= \frac{Market Value Per Share}{Earnings Per Share}\\
+			\end{align*}
+			\item Consider this example where we compare two financial company's P/E ratio to determine which is over/undervalued:
+				\begin{itemize}
+					\item Bank of America Corporation \$BAC closed out the 2020 year with the following:
+						\begin{itemize}
+							\item {\bf Stock Price} = \$30.31
+							\item {\bf Diluted EPS} = \$1.87
+							\item ${\bf P/E} = 16.21 = (\$30.31/\$1.87)$
+						\end{itemize}
+					\item In short, \$BAC was traded at roughly 16 times its trailing earnings. However, the 16.21 P/E multiple by itself is not helpful unless you have something to compare it to. Lets compare \$BAC with JPMorgan Chase \& Co. (\$JPM) of 2020:
+						\begin{itemize}
+							\item {\bf Stock Price} = \$127.07
+							\item {\bf Diluted EPS} = \$8.88
+							\item {\bf P/E} = 14.31x
+						\end{itemize}
+					\item When you compare \$BAC's P/E of 16x to \$JPM's P/E of roughly 14x, \$BAC's stock does not appear as overvalued as it did compared with the average P/E of 15 for the S\&P 500. \$BAC's higher P/E ratio might mean investors expected higher earnings growth in the future compared to \$JPM and the overall market.
+					\item However, no single ratio can tell you all you need to know about a stock. \underline{Before investing, it is wise to use a variety of financial ratios to determine whether a stock 
+						is fairly valued and whether a company's financial health justifies its stock valuation}.
+					\item In general, a high P/E suggests either investors are expecting higher earnings growth in the future compared to companies with a lower P/E {\bf OR} the security is overvalued.
+					\item A low P/E can indicate either that a company may currently be undervalued or that the company is doing exceptionally well relative to its past trends.
+					\item When a company has no earnings ot is posting losses, {\bf the P/E will be expressed as N/A}. 
+					\item The P/E ratio can be seen as a means of standardizing the value of a \$1 of earnings throughout the stock market. In theory, by taking the median of P/E ratios over a period of several years, one could formulate something of a standardized P/E ratio, which could then be seen as a benchmark and used to indicated whether or not a stock is worth buying. 
+					\item The inverse of P/E ratio is the earnings yield (E/P ratio) which is defined as EPS per \$ value of the stocks price expressed as a percentage; but this metric is not widely used compared to P/E ratio.
+					\item Earnings yield may be useful when concerned about the rate of return on investment.
+					\item {\bf Limitations of Using the P/E Ratio:}
+						\begin{itemize}
+							\item A P/E ratio, even one calculated using a forward earnings estimate, doesn't always tell you whether the P/E is appropiate for teh company's forecasted growth rate. So Investors may look into another ratio called the \underline{PEG Ratio}.
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\subsubsection{Earnings Estimate}
 
 \end{document}
