@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  9 NOV 2022 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  9 NOV 2022 21:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -313,7 +313,7 @@ LaTeX Info: Redefining \nameref on input line 9.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<InvestingPics/figure1.png, id=28, 958.58125pt x 492.84125pt>
+<InvestingPics/figure1.png, id=32, 958.58125pt x 492.84125pt>
 File: InvestingPics/figure1.png Graphic file (type png)
 <use InvestingPics/figure1.png>
 Package pdftex.def Info: InvestingPics/figure1.png  used on input line 17.
@@ -335,23 +335,17 @@ Overfull \hbox (503.52002pt too wide) in paragraph at lines 89--91
  []
 
 [5] (./Investing.aux)
-
-Package rerunfilecheck Warning: File `Investing.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Investing.out':
-(rerunfilecheck)             Before: FCD6C22C309F09F1682674A2F12A0530;689
-(rerunfilecheck)             After:  785BA4C5011D2507ECB3C36CB70AD7A0;796.
+Package rerunfilecheck Info: File `Investing.out' has not changed.
+(rerunfilecheck)             Checksum: 785BA4C5011D2507ECB3C36CB70AD7A0;796.
  ) 
 Here is how much of TeX's memory you used:
- 8825 strings out of 480247
- 137579 string characters out of 5896150
+ 8826 strings out of 480247
+ 137600 string characters out of 5896150
  430192 words of memory out of 5000000
- 26660 multiletter control sequences out of 15000+600000
+ 26661 multiletter control sequences out of 15000+600000
  475936 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,8n,63p,642b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,8n,63p,642b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/tommy/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1000.600
 pk> </home/tommy/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.60
 0pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
@@ -361,10 +355,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Investing.pdf (6 pages, 175815 bytes).
+Output written on Investing.pdf (6 pages, 175901 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  12 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

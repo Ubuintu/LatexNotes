@@ -124,5 +124,29 @@
 				\item The kernel tells the CPU how long the time slice for the new process will be.
 				\item The kernel switches the CPU into user mode and hands control of the CPU to the process.
 			\end{enumerate}
+		\item Context switch answers the important questions of when the kernel runs. The answer is that it runs between process time slices during a context switch.
+		\item In the case of a mult-CPU system (which most machines are), things become more complicated because the kernel deosn't need to relinquish control of its current CPU in order to allow a process to run on a different CPU, \& more than one process may run at a time. However to maximuze the usage of all available CPUs, the kernel typically performs these steps anyway.
 	\end{itemize}	
+
+	\subsubsection{Memory Management}
+	\begin{itemize}
+		\item In order for the kernel to manage memory during a context switch (which can be a complex job), The following conditions must hold:
+			\begin{itemize}
+				\item The kernel must have its own private area in memory that user processes cannot access
+				\item Each user process needs its own section of memory
+				\item One user porcess may not access the private memory of another process
+				\item User processes can share memory
+				\item Some memory in user processes can be read-only
+				\item The system can use more memory that is physically present by using disk space as auxiliary
+			\end{itemize}
+		\item Fortunately for the kernel, modern CPUs include a memory management unit (MMU) that enables a memory access scheme called \underline{virtual memory}.
+		\item When using virtual memory, a process does not directly access the memory by its physical location in hardware, instead the kernel sets up each process to act as if it had an entire machine to itself. When the process accesses some of its memory, the MMU intercepts the access \& uses a memory address map to translate the memory location from the process point of view into an actual physical memory location in the machine.
+		\item The kernel must still initialize \& continuously maintain \& alter this memory address map (i.e. During a context switch, the kernel has to change the map from outgoing process to the incoming process.
+		\item The implementation of memory address maps is called a page table (which is covered in chapter 8).
+	\end{itemize}
+
+	\subsubsection{Device Drivers \& Management}
+	\begin{itemize}
+		\item Devices are typically accessible only in kernel mode due to improper access (i.e. user process asking to turn off the power) could crash the machine
+		\item A notable difficulty is that different devices rarely have the same programming interface, even if the devices perform the save task (i.e. two different network cards), therefore, device drivers have been a part of the kernel and strive to present a uniform interface to user processes to simplify the software developer's job
 \end{document}
