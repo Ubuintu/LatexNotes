@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Analyzing a stock from Yahoo Finance}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Analyzing the Summary Tab}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}P/E Ratio}{4}{section.2}%
+\contentsline {subsubsection}{\numberline {2.0.1}Overview}{4}{subsubsection.2.0.1}%
+\contentsline {subsubsection}{\numberline {2.0.2}Earnings Estimate}{7}{subsubsection.2.0.2}%
+\contentsline {section}{\numberline {3}Fundamental Analysis}{7}{section.3}%
