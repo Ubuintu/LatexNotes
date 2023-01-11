@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  7 JAN 2023 06:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  10 JAN 2023 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -322,7 +322,7 @@ been already used, duplicate ignored
                    \relax 
 l.15 	\newpage
                [1]
-<InvestingPics/figure1.png, id=48, 958.58125pt x 492.84125pt>
+<InvestingPics/figure1.png, id=63, 958.58125pt x 492.84125pt>
 File: InvestingPics/figure1.png Graphic file (type png)
 <use InvestingPics/figure1.png>
 Package pdftex.def Info: InvestingPics/figure1.png  used on input line 20.
@@ -377,21 +377,44 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[7] (./Investing.aux)
 
-Package rerunfilecheck Warning: File `Investing.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
-Package rerunfilecheck Info: Checksums for `Investing.out':
-(rerunfilecheck)             Before: 1ACCBCC3018D7666E2503C758BBD3825;928
-(rerunfilecheck)             After:  F6822592440C1005923655FEFC1ED2F4;1025.
+ []
+
+[7]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 	\newline
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+[8] (./Investing.aux)
+Package rerunfilecheck Info: File `Investing.out' has not changed.
+(rerunfilecheck)             Checksum: EA174A27F969561F4ABAA67D987AA67E;1484.
  ) 
 Here is how much of TeX's memory you used:
- 8841 strings out of 480247
- 137752 string characters out of 5896150
- 430178 words of memory out of 5000000
- 26667 multiletter control sequences out of 15000+600000
+ 8847 strings out of 480247
+ 137834 string characters out of 5896150
+ 430187 words of memory out of 5000000
+ 26670 multiletter control sequences out of 15000+600000
  476104 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  60i,8n,63p,642b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -405,10 +428,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Investing.pdf (8 pages, 195432 bytes).
+Output written on Investing.pdf (9 pages, 197919 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
