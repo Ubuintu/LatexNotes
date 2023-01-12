@@ -7,3 +7,4 @@
 \contentsline {subsection}{\numberline {3.1}Overview}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Understanding Fundamental Analysis}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Sources for Fundamental Analysis}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Intrinsic value}{8}{subsection.3.4}%
