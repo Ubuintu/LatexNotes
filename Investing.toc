@@ -8,3 +8,8 @@
 \contentsline {subsection}{\numberline {3.2}Understanding Fundamental Analysis}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Sources for Fundamental Analysis}{8}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Intrinsic value}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Fundamental Analysis vs. Technical Analysis}{9}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Quantitative \& Qualitative Fundamental Analysis}{9}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Qualitative Fundamentals to Consider}{10}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}The Business Model}{10}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.7.2}Competitive Advantage}{10}{subsubsection.3.7.2}%
