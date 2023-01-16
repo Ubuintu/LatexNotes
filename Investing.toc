@@ -13,3 +13,7 @@
 \contentsline {subsection}{\numberline {3.7}Qualitative Fundamentals to Consider}{10}{subsection.3.7}%
 \contentsline {subsubsection}{\numberline {3.7.1}The Business Model}{10}{subsubsection.3.7.1}%
 \contentsline {subsubsection}{\numberline {3.7.2}Competitive Advantage}{10}{subsubsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.3}Management}{10}{subsubsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.4}Corporate Governance}{11}{subsubsection.3.7.4}%
+\contentsline {subsubsection}{\numberline {3.7.5}Industry}{11}{subsubsection.3.7.5}%
+\contentsline {subsection}{\numberline {3.8}Quantitative Fundamentals to Consider: Financial Statements}{11}{subsection.3.8}%
