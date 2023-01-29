@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {1}Verilog Tutorial}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Lore}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}How is Verilog useful}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Introduction to Verilog}{2}{section.2}%
