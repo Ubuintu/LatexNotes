@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  29 JAN 2023 02:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.19)  30 JAN 2023 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -257,7 +257,14 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box54
 )
-(./Verilog.aux)
+(./Verilog.aux
+
+LaTeX Warning: Label `ToDo' multiply defined.
+
+
+LaTeX Warning: Label `ToDo' multiply defined.
+
+)
 \openout1 = `Verilog.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -278,8 +285,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
 \scratchdimen=\dimen154
@@ -371,32 +377,131 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-<VerilogPics/figure_1.png, id=40, 700.86844pt x 190.46156pt>
+<VerilogPics/figure_1.png, id=85, 700.86844pt x 190.46156pt>
 File: VerilogPics/figure_1.png Graphic file (type png)
 <use VerilogPics/figure_1.png>
 Package pdftex.def Info: VerilogPics/figure_1.png  used on input line 48.
 (pdftex.def)             Requested size: 345.0pt x 93.75418pt.
-[2 <./VerilogPics/figure_1.png (PNG copy)>] (./Verilog.aux)
+[2 <./VerilogPics/figure_1.png (PNG copy)>]
+<VerilogPics/figure_2.png, id=91, 283.81032pt x 184.43906pt>
+File: VerilogPics/figure_2.png Graphic file (type png)
+<use VerilogPics/figure_2.png>
+Package pdftex.def Info: VerilogPics/figure_2.png  used on input line 75.
+(pdftex.def)             Requested size: 345.0pt x 224.22449pt.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
+
+ []
+
+[4 <./VerilogPics/figure_2.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+<VerilogPics/figure_3.png, id=106, 763.85374pt x 71.26625pt>
+File: VerilogPics/figure_3.png Graphic file (type png)
+<use VerilogPics/figure_3.png>
+Package pdftex.def Info: VerilogPics/figure_3.png  used on input line 112.
+(pdftex.def)             Requested size: 345.0pt x 32.18803pt.
+<VerilogPics/figure_4.png, id=108, 359.3425pt x 83.31125pt>
+File: VerilogPics/figure_4.png Graphic file (type png)
+<use VerilogPics/figure_4.png>
+Package pdftex.def Info: VerilogPics/figure_4.png  used on input line 122.
+(pdftex.def)             Requested size: 345.0pt x 79.99185pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+<VerilogPics/figure_5.png, id=109, 265.99374pt x 51.19125pt>
+File: VerilogPics/figure_5.png Graphic file (type png)
+<use VerilogPics/figure_5.png>
+Package pdftex.def Info: VerilogPics/figure_5.png  used on input line 134.
+(pdftex.def)             Requested size: 345.0pt x 66.40175pt.
+[5 <./VerilogPics/figure_3.png> <./VerilogPics/figure_4.png>]
+<VerilogPics/figure_6.png, id=118, 797.98125pt x 255.95625pt>
+File: VerilogPics/figure_6.png Graphic file (type png)
+<use VerilogPics/figure_6.png>
+Package pdftex.def Info: VerilogPics/figure_6.png  used on input line 145.
+(pdftex.def)             Requested size: 345.0pt x 110.66049pt.
+<VerilogPics/figure_7.png, id=119, 815.045pt x 52.195pt>
+File: VerilogPics/figure_7.png Graphic file (type png)
+<use VerilogPics/figure_7.png>
+Package pdftex.def Info: VerilogPics/figure_7.png  used on input line 158.
+(pdftex.def)             Requested size: 345.0pt x 22.09377pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+<VerilogPics/figure_8.png, id=120, 707.64375pt x 105.39375pt>
+File: VerilogPics/figure_8.png Graphic file (type png)
+<use VerilogPics/figure_8.png>
+Package pdftex.def Info: VerilogPics/figure_8.png  used on input line 167.
+(pdftex.def)             Requested size: 345.0pt x 51.38286pt.
+[6 <./VerilogPics/figure_5.png> <./VerilogPics/figure_6.png> <./VerilogPics/fig
+ure_7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+<VerilogPics/figure_9.png, id=132, 797.98125pt x 131.49126pt>
+File: VerilogPics/figure_9.png Graphic file (type png)
+<use VerilogPics/figure_9.png>
+Package pdftex.def Info: VerilogPics/figure_9.png  used on input line 177.
+(pdftex.def)             Requested size: 345.0pt x 56.8491pt.
+<VerilogPics/figure_10.png, id=133, 364.36125pt x 278.03876pt>
+File: VerilogPics/figure_10.png Graphic file (type png)
+<use VerilogPics/figure_10.png>
+Package pdftex.def Info: VerilogPics/figure_10.png  used on input line 187.
+(pdftex.def)             Requested size: 345.0pt x 263.27408pt.
+[7 <./VerilogPics/figure_8.png> <./VerilogPics/figure_9.png>]
+<VerilogPics/figure_11.png, id=142, 666.49pt x 234.8775pt>
+File: VerilogPics/figure_11.png Graphic file (type png)
+<use VerilogPics/figure_11.png>
+Package pdftex.def Info: VerilogPics/figure_11.png  used on input line 194.
+(pdftex.def)             Requested size: 345.0pt x 121.58148pt.
+ [8 <./VerilogPics/figure_10.png> <./VerilogPics/figure_11.png>] (./Verilog.aux
+)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Verilog.out' has not changed.
-(rerunfilecheck)             Checksum: 3B5A70EAAE907BE8A038AE011E8E404C;538.
+(rerunfilecheck)             Checksum: D5125CE86045A97B98C910A0B3022A56;2005.
  ) 
 Here is how much of TeX's memory you used:
- 8949 strings out of 480247
- 139787 string characters out of 5896150
- 427422 words of memory out of 5000000
- 26780 multiletter control sequences out of 15000+600000
- 474642 words of font info for 47 fonts, out of 8000000 for 9000
+ 9062 strings out of 480247
+ 142272 string characters out of 5896150
+ 428666 words of memory out of 5000000
+ 26857 multiletter control sequences out of 15000+600000
+ 474977 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,6n,63p,441b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Verilog.pdf (3 pages, 94110 bytes).
+ 60i,7n,63p,441b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/tommy/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600
+pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on Verilog.pdf (9 pages, 310140 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
