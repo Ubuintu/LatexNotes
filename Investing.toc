@@ -17,3 +17,6 @@
 \contentsline {subsubsection}{\numberline {3.7.4}Corporate Governance}{11}{subsubsection.3.7.4}%
 \contentsline {subsubsection}{\numberline {3.7.5}Industry}{11}{subsubsection.3.7.5}%
 \contentsline {subsection}{\numberline {3.8}Quantitative Fundamentals to Consider: Financial Statements}{11}{subsection.3.8}%
+\contentsline {subsubsection}{\numberline {3.8.1}The Balance Sheet}{11}{subsubsection.3.8.1}%
+\contentsline {subsubsection}{\numberline {3.8.2}The Income Statement}{12}{subsubsection.3.8.2}%
+\contentsline {subsubsection}{\numberline {3.8.3}Example of Fundamental Analysis}{13}{subsubsection.3.8.3}%
