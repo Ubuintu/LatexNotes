@@ -20,3 +20,8 @@
 \contentsline {subsubsection}{\numberline {3.8.1}The Balance Sheet}{11}{subsubsection.3.8.1}%
 \contentsline {subsubsection}{\numberline {3.8.2}The Income Statement}{12}{subsubsection.3.8.2}%
 \contentsline {subsubsection}{\numberline {3.8.3}Example of Fundamental Analysis}{13}{subsubsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.4}What is Fundamental Analysis \& its Objective?}{15}{subsubsection.3.8.4}%
+\contentsline {subsubsection}{\numberline {3.8.5}What are the Types of Fundamental Analysis?}{15}{subsubsection.3.8.5}%
+\contentsline {subsubsection}{\numberline {3.8.6}What are the 3 Layers of Fundamental Analysis?}{15}{subsubsection.3.8.6}%
+\contentsline {subsubsection}{\numberline {3.8.7}Tools for Fundamental Analysis}{15}{subsubsection.3.8.7}%
+\contentsline {subsubsection}{\numberline {3.8.8}The Bottom Line}{15}{subsubsection.3.8.8}%
