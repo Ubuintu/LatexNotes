@@ -147,11 +147,11 @@
 		\label{ToDo}
 	\end{figure}
 
-	\underline{Unsized}
+	\subsubsection{Unsized}
 
 	Numbers without a size format specification have a default number of bits depending on the simulator \& machine.
 
-	\underline{Negative} \newline
+	\subsubsection{Negative} 
 	Negative numbers are specified with the - sign before the size of a number; It is illegal to have the - between base format \& number.
 
 	\begin{figure}[H]
@@ -159,7 +159,7 @@
 		\caption{ToDo}
 		\label{ToDo}
 	\end{figure}
-	\underline{Strings} \newline
+	\subsubsection{Strings} 
 
 	A sequence of characters enclosed in double quotes are strings. It cannot be split into multiple lines \& every chracter in the string takes 1B to be stored:
 
@@ -169,7 +169,7 @@
 		\label{ToDo}
 	\end{figure}
 	
-	\underline{Identifiers} \newline
+	\subsubsection{Identifiers} 
 
 	Identifiers are names of variables; Can be made of alphanumeric characters and symbols. They cannot start with a digit nor a \$:
 
@@ -179,7 +179,7 @@
 		\label{ToDo}
 	\end{figure}
 
-	\underline{Keywords}
+	\subsubsection{Keywords}
 
 	Keywords are special identifiers reserved to be define the language constructs \& are lower case. A list of important keywords is as follows:
 
@@ -189,11 +189,51 @@
 		\label{ToDo}
 	\end{figure}
 
-	\underline{Verilog Revisions}
+	\subsubsection{Verilog Revisions}
 	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{VerilogPics/figure_11.png}
 		\caption{ToDo}
 		\label{ToDo}
 	\end{figure}
+
+
+
+
+	\subsection{Verilog Data Types}
+
+	\href{https://www.chipverify.com/verilog/verilog-data-types}{Source} \newline \newline
+
+	Data-types in Verilog is meant to represent data storage elements like bits in a flip-flop \& transmission elements like wires that connect between logic gates \& sequential structures. 
+
+	\subsubsection{What values do variables hold?}
+
+	Almost all data-types can have one of the four different values as given below except for \underline{real} \& \underline{event} data types. \newline \newline
+
+	\begin{tabular}{|l|p{6cm}|}
+		\hline
+		0 & Represents logic zero or false condition \\
+		\hline
+		1 & Refresents logic one or a true condition \\
+		\hline
+		x & Represents an unknown logic value (could be 0 or 1, metastability) \\
+		\hline
+		z & Represents high impedance state \\
+		\hline
+	\end{tabular}
+
+	The following image shows how these values are represented in timing diagrams \& simulation waveforms. Most simulators use this convention where red stands for X and orange in the middle
+	stands for high-impedance or Z. \newline
+	:w
+	
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_12.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\subsubsection{What does the verilog value-set imply?}
+
+	Since Verilog is essentially used to describe hardware elements like flip-flops \& combinational logic like NAND \& NOR, it has to model the value system found in hardware. A logic one would
+	represent the voltage supply $V_d_d$
 
 \end{document}
