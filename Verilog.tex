@@ -234,6 +234,71 @@
 	\subsubsection{What does the verilog value-set imply?}
 
 	Since Verilog is essentially used to describe hardware elements like flip-flops \& combinational logic like NAND \& NOR, it has to model the value system found in hardware. A logic one would
-	represent the voltage supply $V_d_d$
+	represent the voltage supply $V_d_d$. \newline \newline
 
-\end{document}
+	X or x means that the value is unknown at the time and could either be 1 or 0. This is an issue known as metastability. This differs from the boolean logic X, where it signifies don't care. \newline \newline
+
+	As with any incomplete eletric circuit, the wire that is not connected to anything will have high-impedance at that node which is represented by Z or z. \newline
+
+	\subsubsection{Nets \& Variables}
+
+	Nets \& variables are the two main groups of data types which represent different hardware structures \& differ in the way they are assigned \& retain values. \newline \newline
+
+	\underline{Nets}
+
+	Nets are used to connect between hardware entities like logic gates \& don't store any values on their own. In the follow image, a net\_11 connects between the output of the AND gate and the first
+	input of the flip\_floped called data\_0. Similarly, the inputs of the AND gate are connected to nets, net\_45 \& net\_67. \newline
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_13.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	There are different types of nets with various characterisitcs, the most commonly used net in digital design is of type wire.
+Wire is a Verilog data-type used to connect elements \& to connect nets that are driven by a single gate or continuous assignment.
+
+	When there is a requirement for multiple nets, they can be bunched together to form a single wire. In the code below, we can have 
+	a 4-bit wire that sends 4 separate values on each one of these wires. A group of such entities is consider a vector. 
+
+	\[ wire [3:0] n0; // 4-bit wire; example of a vector \]
+
+	It is illegal to redeclare a variable name already declared by a net, parameter, or variable. \newline \newline
+
+	\underline{Variables} \newline \newline
+
+	A variable is an abstraction of a data storage element \& can hold values e.g. A flip\-flop. \newline
+
+	Verilog data\-type, reg can be used to model hardware registers since it can hold values between assignments. Note that a reg does not always represent a flip\-flop as it can also represent 
+	combinational logic. \newline
+
+	\subsubsection{Other Data\-Types}
+
+	\underline{Integer} \newline \newline 
+
+	\href{https://www.chipverify.com/systemverilog/systemverilog-datatypes}{Properties of data\-types in SV (hopefully same in Verilog)} \newline \newline 
+
+	An integer is a general purpose variable of 32-bits wide which is signed that can be used for other purposes while modeling hardware \& stores integer values.\newline \newline 
+
+	\underline{Time} \newline \newline 
+
+	Time is an unsigned \& 64\-bits wide \& can be used to store simulation time quantities for debugging purposes. A realtime variable simply stores time as a floating point quantity. \newline \newline 
+
+	\underline{Real} \newline \newline
+
+	A real variable can store floating point values \& can be assigned the same way as integer \& reg (See Don Mills' book for properties).
+
+	\subsubsection{Verilog Strings}
+
+	Strings are stored in reg, and the width of the reg variable has to be large enough to hold the string. Each character in a string represents an ASCII value \& requires 1 byte. If the size of the
+	variable is smaller than the string, then Verilog truncates teh leftmost bits of the string. If the size of the variable is larger then Verilog appends zeros to the beginning of the string.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_14.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+
+
+\end{document} 

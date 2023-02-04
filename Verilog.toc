@@ -20,3 +20,5 @@
 \contentsline {subsection}{\numberline {3.2}Verilog Data Types}{8}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}What values do variables hold?}{9}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}What does the verilog value-set imply?}{9}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Nets \& Variables}{10}{subsubsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Other Data\-Types}{11}{subsubsection.3.2.4}%
