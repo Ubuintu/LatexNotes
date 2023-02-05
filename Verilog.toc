@@ -22,3 +22,18 @@
 \contentsline {subsubsection}{\numberline {3.2.2}What does the verilog value-set imply?}{9}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Nets \& Variables}{10}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.4}Other Data\-Types}{11}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.5}Verilog Strings}{11}{subsubsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.3}Verilog Scalar \& Vector}{12}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Scalar \& Vector}{12}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Part-selects}{12}{subsubsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.4}Verilog Arrays \& Memories}{14}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Example}{15}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Memories}{17}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Register Vector}{17}{subsubsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.4}Array}{19}{subsubsection.3.4.4}%
+\contentsline {section}{\numberline {4}Building Blocks}{21}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Verilog Module}{21}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Example}{22}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}What is the purpose of a module?}{23}{subsubsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.2}Verilog Ports}{23}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Types of Ports}{23}{subsubsection.4.2.1}%

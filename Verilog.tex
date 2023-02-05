@@ -299,6 +299,217 @@ Wire is a Verilog data-type used to connect elements \& to connect nets that are
 		\label{ToDo}
 	\end{figure}
 
+	\subsection{Verilog Scalar \& Vector}
 
+	\href{https://www.chipverify.com/verilog/verilog-scalar-vector}{Reference}
+	A single bit can be represented as a flip-flop. However, a 16-bit sequential element is a register that can hold 16 bits, thus Verilog uses scalar \& vector net and variables.
 
+	\subsubsection{Scalar \& Vector}
+
+	A net or reg declaration without a range specification is considered a 1-bit wide scalar. If a range is specified, then the net or reg becomes a multibit entity known as a vector. \newline \newline
+
+	The most significant bit of the vector should be specified as the left hand value in the range while the least significant bit of the vector should be specified on the right.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_15.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	The msb \& lsb should be a constant expression and cannot be substituted by a variable (if you need to vary the width of vector, consider using parameters). But they can be any integer value -
+	positive, negative, or zero; and the lsb value can be greater than, equal to, or less than the MSB.
+
+	\subsubsection{Part-selects}
+
+	A range of contiguous bits can be selected through \underline{part-select}. There are two types of part-selects, one with a constant part-select and another with an indexed part-select. \newlin
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_16.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	Using a variable part-select makes it effect to index parts of a vector in loops. Although the starting bit can be varied, the width has to be constant:
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_17.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_18.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\subsection{Verilog Arrays \& Memories}
+
+	An array declaration of a net or variable can either be scalar or a vector. Any number of dimensions can be created by specifying an address range after the identifier name. Verilog allows the
+	creation of arrays using reg, wire, integer, and real data types.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_19.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	An index for every dimension has to be specified to access a particular element of an array \& can be an expression of other variables. An array can be formed for any of the different data-types 
+	supported in Verilog (note that a memory of N wide 1-bit regs is not the same as an n-bit vector reg). \newline \newline
+
+	\underline{Assignment}
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_20.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\subsubsection{Example}
+
+	mem1 is an 8-bit vector, mem2 is an 8-bit array with a depth of 4 (specified by range of [0:3]) \& mem3 is a 16-bit vector 2D array with 4 rows \& 2 columns:
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_21.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	Notice how the inner loop completes before the outer loop.
+
+	\subsubsection{Memories}
+
+	Memories are digital storage elements that help store data \& information in digital circuits. RAMs \& ROMs are good examples of such memory elements. Storage elements can be modeled using one-dimensional
+	arrays of type reg and is called a memory. Each element in the memory may represent a word and is referenced using a single array index.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_22.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\subsubsection{Register Vector}
+	Verilog vectors are declared using a size range on the left side of the variable name \& these get realized into flops that match the size of the variable. In the code show below, the design 
+	module accepts a clock, reset, and some other input signals to RD/WR data into a block. \newline
+
+	It contains a 16-bit storage element called register, which simply gets updated during writes and returns the current value during reads. The register is written when sel \& wr are high on the same
+	clock edge. It returns the current data when sel is high \& wr is low:
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_23.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+	
+	The hardware schematic shows that a 16-bit flop is updated when control logic for writes are active \& the current value is returned when control logic is configured for reads:
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_24.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\subsubsection{Array}
+
+	In this example, register is an array that has four locations with each having a width of 16-bits. The design module accepts an additional input signal which is called addr to access a particular
+	index in the array.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_25.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	It can be seen in the hardware schematic that each index of the array is a 16-bit flop and the input address is used to access a particular set of flops.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_26.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\section{Building Blocks}	
+
+	\subsection{Verilog Module}
+
+	A module is a block of Verilog code that implements a certain functionality. Modules can be embedded within other modules and a higher level module can communicate with its lower level modules
+	using their input \& output ports.
+
+	A module should be enclosed within module \& endmodule keywords. The name of the module should be given after the module keyword as well as a list of optional ports can be declared.
+
+	\subsubsection{Example}
+
+	The module dff represents a D flip-flop which has 3 input ports d, clk, and rstn and one output port, q. The contents within the module block describe how a D flip flop should behave for different
+	combinations of inputs. Here, input d is always assigned to output q at posedge of clk if rstn is high.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_27.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_28.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\subsubsection{What is the purpose of a module?}
+
+	A module represents a design unit that implements certain behavioral characteristics and will get converted into a digital ciruit during synthesis. Any combination of inputs can be given to the
+	module and it will providing the corresponding output. This allows such a module to be reused to form bigger modules that implement more complex designs.
+
+	\subsection{Verilog Ports}
+	\href{https://www.chipverify.com/verilog/verilog-ports}{Source}
+
+	Ports are a set of signals that define the direction such signals with respect to the module.
+
+	\subsubsection{Types of Ports}
+
+	\begin{tabular}{|l|p{10cm}|}
+		\hline
+		{\bf Port} & {\bf Description} \\
+		\hline
+		Input & The design module recieves values using its input port(s) \\
+		\hline
+		Output & The design module sends values using its output port(s) \\
+		\hline
+		Inout & The design module can either send or recieve values using its inout port(s) \\
+		\hline
+	\end{tabular}
+
+	Ports by default are considered as nets of type wire.
+	\subsubsection{Signed Ports}
+	The signed attribute can be attached to a port declaration or a net/reg declaration or both. Implicit nets are defaulted to unsigned.
+
+	\subsection{Port Variations}
+
+	\underline{Veriog 1995} \newline
+
+	Module declaraions had to frst list the names of its ports withinbrackets and then specify the direction of those ports within the body of the module.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_29.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	\underline{Veriog 2001} \newline
+
+	ANSI-C style port naming was introduced in 2001 and allowed the direction to be specified inside the port list.
+
+	If a port declaration is declared as a net or variabled type, then it is illegal to redeclare the same port with another declaration.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_30.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	If the port declaration does not include a net or variable type, then the port can be declared in a net or variable type declaration again.
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_31.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
 \end{document} 
