@@ -25,3 +25,7 @@
 \contentsline {subsubsection}{\numberline {3.8.6}What are the 3 Layers of Fundamental Analysis?}{15}{subsubsection.3.8.6}%
 \contentsline {subsubsection}{\numberline {3.8.7}Tools for Fundamental Analysis}{15}{subsubsection.3.8.7}%
 \contentsline {subsubsection}{\numberline {3.8.8}The Bottom Line}{15}{subsubsection.3.8.8}%
+\contentsline {section}{\numberline {4}Six Basic Financial Ratios and What They Reveal}{16}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Key Takeaways}{16}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Working Capital Ratio}{16}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Quick Ratio}{17}{subsection.4.3}%
