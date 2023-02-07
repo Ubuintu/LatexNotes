@@ -37,3 +37,5 @@
 \contentsline {subsubsection}{\numberline {4.1.2}What is the purpose of a module?}{23}{subsubsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.2}Verilog Ports}{23}{subsection.4.2}%
 \contentsline {subsubsection}{\numberline {4.2.1}Types of Ports}{23}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Signed Ports}{23}{subsubsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.3}Port Variations}{23}{subsection.4.3}%

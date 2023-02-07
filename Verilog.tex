@@ -512,4 +512,87 @@ Wire is a Verilog data-type used to connect elements \& to connect nets that are
 		\caption{ToDo}
 		\label{ToDo}
 	\end{figure}
+
+	\subsection{Verilog Module INstnatiations}
+
+	\href{https://www.chipverify.com/verilog/verilog-module-instantiations}{source}
+
+	Bigger and complex designs can be built by integrating multiple modules in a hierarchical manner. Modules can be instantiated within other modules \& ports of these instances can be connected
+	with other signals inside the parent module. \newline
+
+	The port connections can be done via an ordered list or by name. \newline
+
+	\subsubsection{Port Connection by Ordered List}
+
+	The connection between the modules can be described by using an ordered list. \newline
+
+	In the following example, mydesign is a module insstantiated with the name d0 in another module called tb_top. Ports are conneted in a certain order which is determined by the position of that port
+	in the the port list of the module declaration. For example, b in the testbench is connected to port y of the design simply because both are at the second position in the list of ports in the 
+	instantion of d0.
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_32.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	This method can become inconvenient if the order might change when a new port is added to the list of desired instantiated module or when the number of ports in the design is very large.
+
+	\subsubsection{Port Connection by Name}
+
+	A better way to connect ports is by explicitly linking ports on both sides using their port name.
+
+	The . notation in the port list indicates that the port name following the dot belongs to the design. The signal name to which the design has to be connected is given next within parentheses:
+
+	\[ mydesign d0 ( .x (a[0]), .z(a[1]), .y (a[2]) ); \]
+
+	\subsubsection{Unconected/Floating Ports}
+
+	Ports that are not connected to any wire in the instantiated module will have a state of high-impedance.
+
+	Note that outputs from instantiated modules athat are unconnected are left unconnected in the RTL schematic after sythesis. If the input to such instantiated modules are connected to nets that
+	are not being driven than those ports will be grounded in the RTL schematic. \newline
+
+	All port declarations are implicitly declared as wire and hence the port direction is sufficient in that case. However \underline{output ports that need to store values should be declared as reg 
+	data type \& can be used in a procedural block like always and initial only}. \newline
+
+	Ports of type input or inout cannot be declared as reg since they're driven from external signals continuously and should not store values. 
+
+	\subsection{Verilog assign statement}
+
+	\href{https://www.chipverify.com/verilog/verilog-assign-statement}{source}
+
+	Signals of type wire or of a similar data type requires a continuous assignment of a value. For example, consider an electrical wire used to connected to different components on a breadboard. As
+	long as the power source is connected \& applied to one end of the of the wire, the component connected to the other end of the wire will get voltage. \newline
+
+	In Verilog, this concept is realized by the assign statement where any wire or other similar wire like data-types can be driven continuously with a value. The value may be constant or an expression.
+
+	\subsubsection{Assign Syntax}
+
+	The assignment syntax starts with the keyword assign followed by the signal name which can be a single signal or concatenation of different signal nets. The drive strength \& delay are optional
+	\& are mostly used for dataflow modeling than synthesizing into real hardware. The expression or signal on the RHS is evaluated \& assigned to the net or expression of nets on the LHS:
+
+	\[ assign <net\_expression> = [drive\_strength] [delay] <expression or constant value> \] \newline
+
+	Delay values are useful for specifying delays for gates \& are used to model timing behavior in real hardware because the value dictates when the net should be assigned with evaluated value. \newline \newline
+
+	\underline{Rules} \newline \newline
+
+	\begin{itemize}
+		\item LHS should always be a scalar or vector net or a concatenation of such nets but never a scalar or vector register
+		\item RHS can contain scalar or vector registers \& function calls
+		\item Whenever any operand on the RHS changes in value, LHS will be updated instantly with the new value
+		\item assign statements are also called continuous assignments \& are always active
+	\end{itemize}
+
+	Continuous assignment statements can be used to represent combinational gates in Verilog. \newline
+
+	\underline{Consider the following example}
+
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_33.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
 \end{document} 
