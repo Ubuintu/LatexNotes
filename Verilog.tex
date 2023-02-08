@@ -321,7 +321,7 @@ Wire is a Verilog data-type used to connect elements \& to connect nets that are
 
 	\subsubsection{Part-selects}
 
-	A range of contiguous bits can be selected through \underline{part-select}. There are two types of part-selects, one with a constant part-select and another with an indexed part-select. \newlin
+	A range of contiguous bits can be selected through \underline{part-select}. There are two types of part-selects, one with a constant part-select and another with an indexed part-select. \newline
 
 	\begin{figure}[H]
 		\includegraphics[width=\linewidth]{VerilogPics/figure_16.png}
@@ -526,7 +526,7 @@ Wire is a Verilog data-type used to connect elements \& to connect nets that are
 
 	The connection between the modules can be described by using an ordered list. \newline
 
-	In the following example, mydesign is a module insstantiated with the name d0 in another module called tb_top. Ports are conneted in a certain order which is determined by the position of that port
+	In the following example, mydesign is a module insstantiated with the name d0 in another module called tb\_top. Ports are conneted in a certain order which is determined by the position of that port
 	in the the port list of the module declaration. For example, b in the testbench is connected to port y of the design simply because both are at the second position in the list of ports in the 
 	instantion of d0.
 
@@ -594,5 +594,33 @@ Wire is a Verilog data-type used to connect elements \& to connect nets that are
 		\caption{ToDo}
 		\label{ToDo}
 	\end{figure}
+	\begin{figure}[H]
+		\includegraphics[width=\linewidth]{VerilogPics/figure_34.png}
+		\caption{ToDo}
+		\label{ToDo}
+	\end{figure}
+
+	(Notes: Regs cannot be assigned since they're a data type capable of storing data \& does not require to be driven.)
+
+	\subsubsection{Implicit Continuous Assignment}
+	When an assign statement is used to assign a net with a given value, it is called an explicit assignment. Verilog allows an assignment to be done without using the assign keyword when the net is
+	declared and is called an implicit assignment.
+
+	\subsubsection{Combinational Logic Design}
+	Combinational logic requires the inputs to be continuously driven to maintain the output unlike sequential elements where flip-flops capture \& store the value at edge of a timing event.
+
+	\subsection{Verilog Operators}o
+
+	\href{https://www.chipverify.com/verilog/verilog-operators}{Source}
+
+	This section looks at the operators in Verilog and how synthesis tools realize appropriate hardware elements.
+
+	\subsubsection{Verilog Arithmetic Operators}
+
+	If the second operand of a division or modulus operator is zero, then the resul will be X. If either operand of the power operator is real, then the result will also be real.
+
+	\subsubsection{Verilog Equality OPerators}
+
+
 
 \end{document} 
